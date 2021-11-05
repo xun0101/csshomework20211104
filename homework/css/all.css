@@ -7,6 +7,7 @@
 
 body{
   height: auto;
+  position: relative;
 }
 
 a{
@@ -176,6 +177,10 @@ a{
     margin-top:1rem;
   }
 
+  #li1 li{
+    margin-left: 2rem;
+  }
+
   #li1 li a{
     color: #776C5E;
     font-weight: 300
@@ -187,4 +192,133 @@ a{
 
   #checkli{
     display: none;
+  }
+
+  #section2{
+    width: 100%;
+    /* background-color:yellow; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 34%;
+  }
+
+  #row-img{
+    width: 100%;
+    position: relative;
+  }
+
+  #row-img li{
+    -webkit-animation: round 15s linear infinite;
+    animation: round 15s linear infinite;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  #row-img li img{
+    width: 100%;
+    position: absolute;
+  }
+
+  @-webkit-keyframes round {
+    5% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+    }
+    20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+    }
+    50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/
+    }
+    }
+    @keyframes round {
+    5% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+    }
+    20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+    }
+    50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/
+    }
+    }
+
+    #row-img li:nth-child(1) {
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+      }
+      
+      #row-img li:nth-child(2) {
+      -webkit-animation-delay: 5s;
+      animation-delay: 5s;
+      }
+      
+      #row-img li:nth-child(3) {
+      -webkit-animation-delay: 10s;
+      animation-delay: 10s;
+      }
+
+  .img-alltext{
+    position: absolute;
+    top: 0;
+    display: none;
+  }
+
+  #row-bottom{
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    /* background: chartreuse; */
+    margin-top: 48%;
+  }
+
+  .bottom-right{
+    width: 30%;
+    text-align: center;
+    line-height: 55px;
+    color: #FFE7DC;
+    background-color: #9D6FC3;
+    margin-left:4% ;
+  }
+
+  .bottom-right:hover{
+    background-color:#FEB3CD;
+  }
+  
+
+  .bottom-left{
+    width: 30%;
+    text-align: center;
+    line-height: 55px;
+    color: #FFE7DC;
+    background-color:#FEB3CD;
+    margin-right: 4%;
+  }
+
+  .bottom-left:hover{
+    background-color:#9D6FC3;
+  }
+
+  .bottom-button-left{
+    padding: 0 10px;
+  }
+
+  .bottom-button-right{
+    padding: 0 10px;
   }
