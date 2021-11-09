@@ -159,7 +159,7 @@
   </div>
   <div id="card3-outer">
   <div id="card3">
-    <div class="card3-card">
+    <div class="card3-card move">
       <div class="card3-img">
           <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img03.jpg" alt="card3-img3">
         </div>
@@ -172,7 +172,7 @@
         <p><span>$35.00/ DZ</span></p>
       </div>
     </div>
-    <div class="card3-card">
+    <div class="card3-card move">
     <div class="card3-img">
       <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img01.jpg" alt="card3-img1">
     </div>
@@ -184,7 +184,7 @@
       <p>&nbsp;</p>
       <p><span>$49.00/ DZ</span></p>
     </div></div>
-    <div class="card3-card">
+    <div class="card3-card move">
     <div class="card3-img">
         <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img02.jpg" alt="card3-img2">
       </div>
@@ -197,7 +197,7 @@
       <p><span>$25.00 / fo 40</span></p>
     </div>
   </div>
-  <div class="card3-card">
+  <div class="card3-card move">
     <div class="card3-img">
         <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img03.jpg" alt="card3-img3">
       </div>
@@ -216,8 +216,12 @@
     </div> -->
 </div>
 <div class="card3-allbutton">
-  <a role="button"><div class="card3-leftbutton"></div></a>
-  <a role="button"><div class="card3-rightbutton"></div></a>
+  <a class="card3-leftbutton" role="button">
+    <!-- <div class="card3-leftbutton"></div> -->
+  </a>
+  <a class="card3-rightbutton" role="button">
+    <!-- <div class="card3-rightbutton"></div> -->
+  </a>
   </div>
   <div class="bottom-left card3-bottom">
     <a href="#">
@@ -472,25 +476,26 @@
     //   }
     //   })
 
-    //紀錄目前是第幾張圖
+    // //紀錄目前是第幾張圖
     // let now = 0
 
-    //總共幾張
+    // //總共幾張
     // const total=$(".card3-card").length
 
-    //調整 imgs 長度
+    // //調整 imgs 長度
     // $("#card3").css('width',$(".card3-card").length*368)
 
-    //下一張
+    // //下一張
     // $('.card3-rightbutton').click(function(){
-      // if(now < total-1){
-        //目前張數+1
-        // now++
-        //計算 imgs 的移動距離
-        // const move =now*368
-        //移動
-        // $('#card3').stop(true,true).animate({left:`-${move}px`})
-      // }
+    //   if(now < total-1){
+    //     $('.move').css("display","none")
+    //     //目前張數+1
+    //     now++
+    //     //計算 imgs 的移動距離
+    //     const move =now*368
+    //     // 移動
+    //     $('#card3').stop(true,true).animate({left:`-${move}px`})
+    //   }
     // })
 
   </script>

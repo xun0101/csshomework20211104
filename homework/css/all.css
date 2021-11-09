@@ -378,6 +378,10 @@ a{
     left: 0;
     width: 367px;
     /* margin-right: 20px; */
+  }
+
+  .move{
+    /* display: block; */
     animation: move 15s linear infinite;
   }
 
