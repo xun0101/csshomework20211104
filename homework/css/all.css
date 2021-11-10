@@ -381,7 +381,6 @@ a{
   }
 
   .move{
-    /* display: block; */
     animation: move 15s linear infinite;
   }
 
@@ -453,6 +452,10 @@ a{
     top: 80%;
   }
 
+  .card3-leftbutton:hover{
+    background-color: black;
+  }
+
   .card3-leftbutton::before{
     content: "";
     width: 50%;
@@ -486,6 +489,10 @@ a{
     border-radius: 50%;
     right: 5%;
     top: 80%;
+  }
+
+  .card3-rightbutton:hover{
+    background-color: black;
   }
 
   .card3-rightbutton::before{
@@ -725,3 +732,208 @@ a{
     font-size: 12px;
     color: #ffffff;
   }
+
+  /* section7 */
+  #section7{
+    margin:5%;
+  }
+  .section7-text h3{
+    font-family: 'Rochester', handwriting;
+    font-size: 1.5rem;
+    margin: 2% 0;
+  }
+
+  .section7-text p{
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    color: #776C5E;
+    margin-bottom: 3%;
+  }
+
+  .senction7-img{
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .senction7-img img{
+    width: 100%;
+  }
+
+  /* section8 */
+  #section8{
+    background-color: #FCECF6;
+    padding: 2% ;
+    margin: 5% 0;
+  } 
+
+  .section8-title{
+    margin: 3% 0;
+  }
+
+  .section8-title h3{
+    font-family: 'Rochester', handwriting;
+    font-size: 2rem;
+    margin: 2% 0;
+  }
+
+  .section8-text{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #776C5E;
+    margin-bottom: 3%;
+    line-height: 1.5;
+  }
+
+  .section8-email h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 3% 0;
+  }
+
+  .i4{
+    font-family: 'Raleway', sans-serif;
+    color: #88898a;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 400;
+    border-color: #403646;
+    padding: 6px 3px;
+    font-size: 14px;
+    line-height: 1;
+    border-width: 0 0 1px;
+    width: 100%;
+  }
+
+  .i4:focus{
+    outline: none;
+  }
+
+  .f4{
+    margin-bottom: 20px;
+  }
+
+  .label4{
+    display: none;
+  }
+
+  .b1{
+    color: white;
+    border: none;
+    margin-bottom:5%;
+  }
+
+  .section8-bg{
+    background: url(https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-content-bg03.jpg)no-repeat center/cover;
+    width: 100%;
+    height: 300px;
+  }
+
+  /* section9 */
+  #section9{
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section9-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section9-top h2{
+    font-family: 'Rochester', handwriting;
+    font-size: 2rem;
+    margin: 3% 0;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .section9-card{
+    margin: 5% 2%;
+  }
+
+  .card9-img{
+    width: 100%;
+  }
+
+  .card9-img img{
+    width: 100%;
+  }
+
+  .card9-title{
+    margin: 2% 0;
+  }
+  .card9-title a{
+    font-family: 'Rochester', handwriting;
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .card9-title a:hover{
+    color: #FEB3CD;
+  }
+
+  .section9-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0;
+  }
+
+  .card9-text a{
+    color: black;
+  }
+
+  /* section10 */
+
+  #section10{
+    width: 100%;
+    background: #FCECF6;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2%;
+  }
+
+  .section10-title{
+    font-family: 'Rochester', handwriting;
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+
+  .section10-logo{
+    display: flex;
+    flex-direction: row;
+    /* margin: 5% 2%; */
+  }
+
+  .logo4{
+    width: 25%;
+  }
+
+  .logo4 img{
+    width: 80%;
+  }
+
+  /* srction11 */
+  #section11{
+    width: 100%;
+    height: 10vh;
+  }
+
+  #section11 h1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #403646;
+    line-height: 110px;
+  }
+
+
+
+
