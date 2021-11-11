@@ -934,6 +934,28 @@ a{
     line-height: 110px;
   }
 
+  /* secrion12 */
+  #section12{
+    margin: 5% 0;
+    padding: 0;
+    height: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .min-img{
+    font-size: 0;
+    width: 50%;
+    padding: 0;
+    background: #776C5E;
+  }
+
+  /* section13 */
+  #section13{
+    background: #403646;
+  }
 
 
 
