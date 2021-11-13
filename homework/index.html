@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- wow.js -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'/>
   <!-- reset.css -->
   <link rel="stylesheet" href="./css/reset.css">
   <!-- all.css -->
@@ -13,7 +15,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="page">
+  <div id="page"> 
+    <div class="calltop-up wow animate__fadeInUp" data-wow-offset="500">
+      <a href="#"> <img src="../icon/up-arrow.png"> </a>
+    </div>
+    <div class="calltop">
+      <a> <img src="../icon/telephone-handle-silhouette (2).png"> </a>
+    </div>
+  </div>
+
     <div id="section1">
       <div id="head">
         <div id="logo">
@@ -100,7 +110,6 @@
           </ul>
         </div>
     </div>
-  </div>
 
   <div id="section2">
     <div id="row-img">
@@ -700,11 +709,95 @@
   </div>
 
   <div id="section13">
-    
+    <div class="section13-top">
+      <div class="section13-toptext">
+        <p>We welcome visitors at our spa salon and would love to have you join us.</p>
+      </div>
+      <div class="icon">
+        <a class="icon-img">
+        <img src="../icon/twitter.png">
+        </a>
+        <a class="icon-img">
+        <img src="../icon/facebook.png">
+        </a>
+        <div class="icon-img">
+        <img src="../icon/pinterest.png">
+        </div>
+        <a class="icon-img">
+        <img src="../icon/instagram.png">
+        </a>
+        <a class="icon-img">
+        <img src="../icon/google-plus.png">
+        </a>
+      </div>
+    </div>
+    <div class="section13-logo">
+      <div id="logo">
+        <div class="logo-img">
+          <a href="#">
+        <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-logo.png">
+          </a>
+        </div>
+      <div class="logo-text">
+        <div class="logo-text-pink">
+          <p>
+          <a href="#" class="text-pink">
+            Louise’s Bakery
+          </a>
+        </p>
+        </div>
+          <div class="logo-text-black">
+            <p>
+          <a href="#" class="text-black white13">
+            CAKES & DESSERTS​​​​​​​
+          </a>
+            </p>
+          </div>
+      </div>
+      </div>
+      <div class="section13-bottom">
+        <div class="connection">
+          <div class="con-img">
+          <img src="../icon/telephone-handle-silhouette.png">
+          </div>
+          <a><p>&emsp;1-800-1234-567</p></a>
+        </div>
+        <div class="connection">
+            <div class="con-img">
+          <img src="../icon/map-marker1.png">
+          </div>
+          <a><p>&emsp;4578 Marmora Road, Glasgow</p></a>
+        </div>
+        <div class="connection">
+          <div class="con-img">
+          <img src="../icon/envelope1.png">
+          </div>
+          <p><a>&emsp;contacts@contacts.com</a>
+          <br>
+          <a>&emsp;info@info.com</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="bottom13-text">
+      <p>© Copyright | Louise’s Bakery  Cakes & Desserts 2019. All Right Reserved</p>
+    </div>
+  </div>
   </div>
 
+</div>
+<script src="js/wow.min.js"></script>
   <script src="../jquery-3.6.0.min.js"></script>
   <script>
+    var wow = new WOW(
+      {
+          boxClass:     'wow',      // default
+          animateClass: 'animate__animated', // default
+          offset:       0,          // default
+          mobile:       true,       // default
+          live:         true        // default
+      }
+    )
+    wow.init();
     const card3 = document.getElementById("card3")
     const card3Card = document.getElementsByClassName(".card3-card")
     const card3Leftbutton = document.getElementsByClassName(".card3-leftbutton")
