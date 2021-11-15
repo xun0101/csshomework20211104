@@ -1060,3 +1060,12 @@ a{
   width: 50%;
   margin-top: 25%;
 }
+
+/* 768 */
+@media(min-width:768px){
+
+}
+/* 1200 */
+@media(min-width:1200px){
+  
+}
