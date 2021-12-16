@@ -1633,7 +1633,7 @@ a{
 
     /* section6 */
     #section6{
-      background-color: #FCECF6;
+      background: url(https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-content-bg02.jpg) no-repeat center/cover;
     }
   
     .section6-continer{
@@ -1642,9 +1642,7 @@ a{
     }
   
     .section6-topimg{
-      display: block;
-      width: 30%;
-      object-fit: cover;
+      visibility:hidden;
     }
   
     .section6-top{
@@ -1673,13 +1671,65 @@ a{
     }
 
     .bottom-right1{
-      /* text-align: center;
-      line-height: 40px;
-      background-color: #9D6FC3;
-      margin-left:4% ;
-      padding:0 .5rem; */
       font-weight: 400;
       font-size: 14px;
     }
+
+    /* section7 */
+  #section7{
+    width: 80%;
+    margin:auto;
+    margin-top: 5%;
+  }
+
+  /* section8 */
+  #section8{
+    padding: 0 0 0 1rem;
+    display: flex;
+  } 
+
+  .section8top{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }  
+  
+  .section8-title h3{
+    font-size: 90px;
+  }
+
+  .section8-row{
+    display: flex;
+  }
+
+  .section8-text{
+    width: 40%;
+    margin: 1rem;
+  }
+  .section8-email{
+    width: 50%;
+  }
+
+  /* section9 */
+  .section9-top h2{
+    font-size: 90px;
+  }
+
+  .button-h{
+    height: 50px;
+  }
+
+  .bottom-button-right{
+    height: 50px;
+  }
+
+  .left1{
+    height: 50px;
+  }
+  .button-w{
+    width: 30%;
+  }
+
+
 
 }
