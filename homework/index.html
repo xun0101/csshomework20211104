@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/all.css">
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <div id="page"> 
@@ -168,7 +169,8 @@
   </div>
   <div id="card3-outer">
   <div id="card3">
-    <div class="card3-card move">
+    <div class="card3-in">
+    <div class="card3-card move cardMove">
       <div class="card3-img">
           <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img03.jpg" alt="card3-img3">
         </div>
@@ -181,7 +183,7 @@
         <p><span>$35.00/ DZ</span></p>
       </div>
     </div>
-    <div class="card3-card move">
+    <div class="card3-card move cardMove">
     <div class="card3-img">
       <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img01.jpg" alt="card3-img1">
     </div>
@@ -193,7 +195,7 @@
       <p>&nbsp;</p>
       <p><span>$49.00/ DZ</span></p>
     </div></div>
-    <div class="card3-card move">
+    <div class="card3-card move cardMove">
     <div class="card3-img">
         <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img02.jpg" alt="card3-img2">
       </div>
@@ -206,7 +208,7 @@
       <p><span>$25.00 / fo 40</span></p>
     </div>
   </div>
-  <div class="card3-card move">
+  <div class="card3-card move cardMove">
     <div class="card3-img">
         <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img03.jpg" alt="card3-img3">
       </div>
@@ -219,7 +221,7 @@
       <p><span>$35.00/ DZ</span></p>
     </div>
   </div>
-  <div class="card3-card move">
+  <div class="card3-card move cardMove">
     <div class="card3-img">
       <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img01.jpg" alt="card3-img1">
     </div>
@@ -231,7 +233,7 @@
       <p>&nbsp;</p>
       <p><span>$49.00/ DZ</span></p>
     </div></div>
-    <div class="card3-card move">
+    <div class="card3-card move cardMove">
       <div class="card3-img">
           <img src="https://template68229.motopreview.com/mt-demo/68200/68229/mt-content/uploads/2018/12/mt-1706-img02.jpg" alt="card3-img2">
         </div>
@@ -243,11 +245,12 @@
         <p>&nbsp;</p>
         <p><span>$25.00 / fo 40</span></p>
       </div>
-    </div>
+    </div></div>
 </div>
 <div class="card3-allbutton">
-  <a class="card3-leftbutton" role="button"></a>
-  <a class="card3-rightbutton" role="button"></a>
+  <!-- <button class="card3-leftbutton " style="border: none"></button> -->
+  <a id="left" class="card3-leftbutton " role="button"></a>
+  <a id="right" class="card3-rightbutton" role="button"></a>
   </div>
   <div class="bottom-left card3-bottom">
     <a href="#">
@@ -587,7 +590,7 @@
             <a href="#">
             <span class="bottom-button-left1 left1">Order Online</span>
           </a></div>
-          <div class="bottom-right1 button-h">
+          <div class="bottom-right1 button-w button-h">
             <a href="#">
             <span class="bottom-button-right">Direction</span>
           </a></div>
@@ -621,7 +624,7 @@
             <a href="#">
             <span class="bottom-button-left1 left1">Order Online</span>
           </a></div>
-          <div class="bottom-right1 button-h">
+          <div class="bottom-right1 button-w button-h">
             <a href="#">
             <span class="bottom-button-right">Direction</span>
           </a></div>
@@ -655,7 +658,7 @@
             <a href="#">
             <span class="bottom-button-left1 left1">Order Online</span>
           </a></div>
-          <div class="bottom-right1 button-h">
+          <div class="bottom-right1 button-w button-h">
             <a href="#">
             <span class="bottom-button-right">Direction</span>
           </a></div>
@@ -664,6 +667,7 @@
     </div>
   </div>
 
+  <div class="section">
   <div id="section10">
     <div class="section10-title">Brand Collaborations</div>
     <div class="section10-logo">
@@ -681,6 +685,7 @@
     </div>
     </div>
   </div>
+</div>
 
   <div id="section11">
     <h1>Follow @louisesbakery on instagram</h1>
@@ -815,7 +820,9 @@
 
 </div>
 <script src="js/wow.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../jquery-3.6.0.min.js"></script>
+  <script src="scripts/jq.carousel.js"></script>
   <script>
     var wow = new WOW(
       {
@@ -827,7 +834,60 @@
       }
     )
     wow.init();
-    
+    let now = 0;
+    const total = $(".card3-card").length;
+
+    $("#right").on('click', function() {
+      $(".move").css({
+        display: 'none'
+      })
+      if(now < total - 1) {
+        console.log(now)
+            now++;
+            var move = now*367;
+            $(".card3-in").stop(true, true)
+            $(".card3-in").animate({left: `-${move}px`}, 1000)
+            if(move > 1000){
+              $(".card3-in").animate({left: '367px'},1)
+              move = 0
+              now = 0
+            }
+        }
+      $(".move").css({
+        display: 'block'
+      })
+    })
+
+    $("#left").on('click', function() {
+      $(".move").css({
+        display: 'none'
+      })
+      if(now > 0) {
+        console.log(now)
+            now--;
+            var move = now*367;
+            $(".card3-in").stop(true, true)
+            if(move == 0) {
+                $(".card3-in").animate({left: `${move}px`}, 1000)
+            }
+            else {
+                $(".card3-in").animate({left: `-${move}px`}, 1000)
+            }
+        }
+            if(move < 367){
+              $(".card3-in").animate({left: '367px'},1)
+              move = 0
+              now = 0
+            }
+      $(".move").css({
+        display: 'block'
+      })
+    })
+
+  
+
+
+
 
   </script>
 </body>

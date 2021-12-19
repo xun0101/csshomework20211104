@@ -314,6 +314,9 @@ a{
     line-height: 40px;
     background-color:#FEB3CD;
     margin-right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .bottom-left:hover{
@@ -359,26 +362,25 @@ a{
   #card3{
     width: 367px;
     height: 395px;
-    background: #FEB3CD;
+    /* background: #FEB3CD; */
     display: flex;
-    /* justify-content: center; */
     overflow: hidden;
-    /* float: left; */
-    /* width: 1200px; */
     margin:  auto;
     position: relative;
-    /* animation: move 15s linear infinite; */
+  }
+
+  .card3-in{
+    /* background: #403646; */
+    width: 100%;
+    display: flex;
+    position: absolute;
   }
 
   .card3-card{
-    background: #FFE7DC;
     height: 394px;
     float: left;
-    /* list-style: none; */
-    /* position: absolute; */
     left: 0;
     width: 367px;
-    /* margin-right: 20px; */
   }
 
   .move{
@@ -439,7 +441,6 @@ a{
   }
 
   #card3-outer{
-    background: aquamarine;
     position: relative;
   }
 
@@ -660,6 +661,7 @@ a{
 
   .bottom-button-left1{
     color: black;
+    vertical-align: middle;
   }
 
   .bottom-left1:hover{
@@ -1242,23 +1244,18 @@ a{
   #card3{
     width: 749px;
     height: 395px;
-    background: #FEB3CD;
     display: flex;
-    overflow: hidden;
     margin:  auto;
     position: relative;
   }
 
   .card3-card{
     margin-left: 15px;
-    background: #FFE7DC;
+    /* background: #FFE7DC; */
     height: 394px;
     float: left;
-    /* list-style: none; */
-    /* position: absolute; */
     left: 0;
     width: 367px;
-    /* margin-right: 20px; */
   }
 
   .move{
@@ -1285,11 +1282,6 @@ a{
       transform: translateX(-1164px);
       opacity: 1;
     }
-  }
-
-  #card3-outer{
-    background: aquamarine;
-    position: relative;
   }
 
   .card3-leftbutton{
@@ -1727,8 +1719,45 @@ a{
     height: 50px;
   }
   .button-w{
-    width: 30%;
+    width: 50%;
+    text-align: center;
   }
+
+  .bottom-button-left1{
+    width: 65%;
+  }
+
+  /* section10 */
+
+  .section{
+  background-color: #FCECF6;;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  }
+
+  #section10{
+    width: 70%;
+  }
+
+  .section10-title{
+    font-size: 60px;
+  }
+
+    /* section13 */
+    #section13{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .section13Top{
+      margin-top: 2%;
+    }
+
+    .connection{
+      width: 150%;
+    }
+  
 
 
 
