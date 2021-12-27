@@ -862,7 +862,7 @@
       $(".move").css({
         display: 'none'
       })
-      if(now > 0) {
+      if(now < total - 1) {
         console.log(now)
             now--;
             var move = now*367;
@@ -875,6 +875,7 @@
             }
         }
             if(move < 367){
+              console.log(move)
               $(".card3-in").animate({left: '367px'},1)
               move = 0
               now = 0
