@@ -1528,7 +1528,7 @@ a{
 
 #section13 hr{
   border:1px solid #645271;
-  width: 100vw;
+  width: 100%;
 }
 
 .bottom13-text{
@@ -1731,7 +1731,7 @@ a{
 
   .section{
   background-color: #FCECF6;;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   }
